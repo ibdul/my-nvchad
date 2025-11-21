@@ -1,0 +1,112 @@
+return {
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    version = "*",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    },
+    cmd = "Neotree",
+    keys = {
+      { "\\", ":Neotree reveal<CR>", desc = "NeoTree reveal", silent = true },
+    },
+    opts = {
+      filesystem = {
+        window = {
+          mappings = {
+            ["\\"] = "close_window",
+          },
+        },
+      },
+    },
+  },
+
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+    config = function()
+      local fb_actions = require("telescope").extensions.file_browser.actions
+
+      require("telescope").setup {
+        extensions = {
+          file_browser = {
+            theme = "ivy",
+            hijack_netrw = true,
+            mappings = {
+              ["n"] = {
+                ["h"] = fb_actions.goto_parent_dir,
+                ["l"] = fb_actions.open_dir,
+                ["."] = fb_actions.toggle_hidden,
+              },
+            },
+          },
+        },
+      }
+      require("telescope").load_extension "file_browser"
+    end,
+  },
+
+{
+  'nvim-telescope/telescope-live-grep-args.nvim',
+  dependencies = {
+    'nvim-telescope/telescope.nvim',
+  },
+  config = function()
+    local telescope = require 'telescope'
+    local lga_actions = require 'telescope-live-grep-args.actions'
+
+    telescope.setup {
+      extensions = {
+        live_grep_args = {
+          auto_quoting = true, -- enable/disable auto-quoting
+          -- define mappings, e.g.
+          mappings = { -- extend mappings
+            i = {
+              ['<C-k>'] = lga_actions.quote_prompt(),
+              ['<C-i>'] = lga_actions.quote_prompt { postfix = ' --iglob ' },
+              -- freeze the current list and start a fuzzy search in the frozen list
+              ['<C-space>'] = lga_actions.to_fuzzy_refine,
+            },
+          },
+
+          n = {
+            ['<C-q>'] = {
+              function(p_bufnr)
+                -- send results to quick fix list
+                require('telescope.actions').send_to_qflist(p_bufnr)
+                local qflist = vim.fn.getqflist()
+                local paths = {}
+                local hash = {}
+                for k in pairs(qflist) do
+                  local path = vim.fn.bufname(qflist[k]['bufnr']) -- extract path from quick fix list
+                  if not hash[path] then -- add to paths table, if not already appeared
+                    paths[#paths + 1] = path
+                    hash[path] = true -- remember existing paths
+                  end
+                end
+                -- show search scope with message
+                vim.notify('find in ...\n  ' .. table.concat(paths, '\n  '))
+                -- execute live_grep_args with search scope
+                require('telescope').extensions.live_grep_args.live_grep_args { search_dirs = paths }
+              end,
+              type = 'action',
+              opts = {
+                nowait = true,
+                silent = true,
+                desc = 'Live grep on results',
+              },
+            },
+          },
+          -- ... also accepts theme settings, for example:
+          -- theme = "dropdown", -- use dropdown theme
+          -- theme = { }, -- use own theme spec
+          -- layout_config = { mirror=true }, -- mirror preview pane
+        },
+      },
+    }
+
+    telescope.load_extension 'live_grep_args'
+  end,
+}
+}
