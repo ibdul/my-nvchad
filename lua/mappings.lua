@@ -1,4 +1,3 @@
-require "nvchad.mappings"
 -- require "nvchad.mappings"
 require "./mappings-custom"
 
