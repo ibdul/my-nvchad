@@ -1,5 +1,6 @@
 return {
   'nvim-telescope/telescope-live-grep-args.nvim',
+  event = "VeryLazy",
   dependencies = {
     'nvim-telescope/telescope.nvim',
   },

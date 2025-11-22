@@ -1,6 +1,6 @@
 return {
 	"https://github.com/RRethy/vim-illuminate",
-  lazy=false,
+  event = "VeryLazy",
 	config = function()
 		-- default configuration
 		--

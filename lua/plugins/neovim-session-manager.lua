@@ -1,5 +1,6 @@
 return {
 	"https://github.com/Shatur/neovim-session-manager",
+  event = "VeryLazy",
 	config = function()
 		local Path = require('plenary.path')
 		local config = require('session_manager.config')

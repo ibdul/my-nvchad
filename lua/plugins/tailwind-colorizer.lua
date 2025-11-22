@@ -1,5 +1,6 @@
 return {
 	"roobert/tailwindcss-colorizer-cmp.nvim",
+  event = "VeryLazy",
 	config = function()
 		local status_ok, colorizer = pcall(require, "tailwindcss-colorizer-cmp")
 
