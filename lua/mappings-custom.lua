@@ -134,3 +134,10 @@ keymap('n', '<C-t>o', '<cmd>ObsidianSearch<cr>', opts)
 keymap('n', '<c-t>p', '<cmd>Telescope neoclip<cr>', opts)
 
 keymap('n', '<A-i>', ":exe v:count1 . 'ToggleTerm' <CR> ", opts)
+
+-- Diagnostic keymaps
+vim.keymap.set('n', 'g,', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
+vim.keymap.set('n', 'g;', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
