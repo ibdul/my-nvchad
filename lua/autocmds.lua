@@ -1,4 +1,4 @@
-require "nvchad.autocmds"
+-- require "nvchad.autocmds"
 
 vim.cmd [[
   augroup _general_settings
