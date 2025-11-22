@@ -20,5 +20,14 @@ M.base46 = {
 --          lazyload = false
 --      }
 -- }
+--
+M.ui = {
+  statusline = {
+    theme = "default", 
+    separator_style = "default",
+    -- default = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+    order = { "cwd", "mode", "diagnostics",  "git", "%=", "lsp_msg", "%=", "cursor" },
+  },
+}
 
 return M
