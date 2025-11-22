@@ -1,9 +1,11 @@
 return {
 	"https://github.com/RRethy/vim-illuminate",
+  lazy=false,
 	config = function()
 		-- default configuration
 		--
 		require('illuminate').configure({
+      enable = true,
 			-- providers: provider used to get references in the buffer, ordered by priority
 			providers = {
 				'lsp',
