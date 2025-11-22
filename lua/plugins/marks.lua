@@ -1,6 +1,6 @@
 return {
 	"https://github.com/chentoast/marks.nvim",
-
+  lazy=false,
 	config = function()
 		require 'marks'.setup {
 			-- whether to map keybinds or not. default true
