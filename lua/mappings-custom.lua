@@ -28,7 +28,7 @@ keymap('n', '<C-l>', '<C-w>l', opts)
 keymap('n', '<leader>d', ':Telescope file_browser path=%:p:h select_buffer=true<CR>', opts)
 
 --buffer delete
-keymap('n', '<leader>x', ':Bdelete<CR>', opts)
+keymap('n', '<leader>x', ':bd<CR>', opts)
 
 -- Copy whole file content to clipboard with C-c
 keymap('n', '<C-c>', ':%y<CR>', opts)
