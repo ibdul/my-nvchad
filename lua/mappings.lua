@@ -1,5 +1,5 @@
 -- require "nvchad.mappings"
-require "./mappings-custom"
+require "./key-mappings-custom"
 
 -- Disable mappings
 local nomap = vim.keymap.del
