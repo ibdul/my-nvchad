@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "eldritch",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -28,6 +28,9 @@ M.ui = {
     default = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
     -- order = {"cwd", "mode", "git", "diagnostics", "git", "%=", "lsp_msg", "%=", "cursor" },
   },
+  tabufline = {
+    enabled=false,
+  }
 }
 
 return M

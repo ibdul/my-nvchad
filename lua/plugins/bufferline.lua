@@ -1,6 +1,7 @@
 return {
 	"akinsho/bufferline.nvim",
-  event = "VeryLazy",
+  -- event = "VeryLazy",
+  lazy=false,
 	dependencies = {
 		"moll/vim-bbye"
 	},
