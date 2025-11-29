@@ -1,7 +1,6 @@
 return {
   'folke/noice.nvim',
   event = "VeryLazy",
-  --[[ event = "VeryLazy", ]]
   opts = {
     cmdline = {
       enabled = true, -- enables t Noice cmdline UI
