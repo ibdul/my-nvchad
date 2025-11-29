@@ -1,10 +1,12 @@
 return {
   "vigoux/notifier.nvim",
   lazy = false,
-  event ="VeryLazy",
+  -- event ="VeryLazy",
   config = function()
-    require'notifier'.setup {
-    -- You configuration here
+    local notifier =  require'notifier'
+    notifier.setup {
+      -- You configuration here
     }
+    -- vim.notify = notifier
   end
 }
