@@ -31,9 +31,9 @@ vim.cmd [[
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
   augroup end
 
-  augroup fmt
-    autocmd!
-    autocmd BufWritePre * undojoin | Neoformat
-  augroup END
+  "augroup fmt
+  "  autocmd!
+  "  autocmd BufWritePre * undojoin | Neoformat
+  "augroup END
 
 ]]
