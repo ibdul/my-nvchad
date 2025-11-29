@@ -17,6 +17,8 @@ keymap('', '<Space>', '<Nop>', opts)
 -- terminal = t
 -- command = c
 
+keymap("n",'<leader>rn', vim.lsp.buf.rename, opts)
+
 --NORMAL MODE--
 -- improved window navigation
 keymap('n', '<C-h>', '<C-w>h', opts)
