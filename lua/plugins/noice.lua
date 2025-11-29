@@ -1,14 +1,18 @@
 return {
   "folke/noice.nvim",
-  event = "VeryLazy",
+  -- event = "VeryLazy",
+  lazy= false,
   opts = {
     -- add any options here
+    filter = {
+      event = "mini",
+    },
     messages = {
       view = "mini",
     },
-    -- notify = {
-    --   view = "mini",
-    -- },
+    notify = {
+      view = "mini",
+    },
   },
   dependencies = {
     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
