@@ -30,7 +30,11 @@ M.ui = {
   },
   tabufline = {
     enabled=false,
-  }
+  },
+  neotree = {
+    enabled=false,
+  },
+
 }
 
 return M
