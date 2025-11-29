@@ -10,7 +10,7 @@ return {
   keys = {
     -- 👇 in this section, choose your own keymappings!
     {
-      '<leader>-',
+      '<leader>da',
       mode = { 'n', 'v' },
       '<cmd>Yazi<cr>',
       desc = 'Open yazi at the current file',
@@ -23,6 +23,11 @@ return {
     },
     {
       '<c-up>',
+      '<cmd>Yazi toggle<cr>',
+      desc = 'Resume the last yazi session',
+    },
+    {
+      '<leader>d',
       '<cmd>Yazi toggle<cr>',
       desc = 'Resume the last yazi session',
     },
