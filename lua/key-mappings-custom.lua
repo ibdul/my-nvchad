@@ -25,7 +25,7 @@ keymap('n', '<C-k>', '<C-w>k', opts)
 keymap('n', '<C-l>', '<C-w>l', opts)
 
 -- file browser
-keymap('n', '<leader>d', ':Telescope file_browser path=%:p:h select_buffer=true<CR>', opts)
+-- keymap('n', '<leader>d', ':Telescope file_browser path=%:p:h select_buffer=true<CR>', opts)
 
 --buffer delete
 keymap('n', '<leader>x', ':bd<CR>', opts)
