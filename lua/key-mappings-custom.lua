@@ -145,5 +145,5 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 
 vim.keymap.set("n",'<leader>ca', vim.lsp.buf.code_action, {desc='[C]ode [A]ction'})
 
-local cmp = require 'cmp'
-vim.keymap.set("n",'<C-n>', cmp.mapping.select_next_item()) 
+-- local cmp = require 'cmp'
+-- vim.keymap.set("n",'<C-n>', cmp.mapping.select_next_item()) 

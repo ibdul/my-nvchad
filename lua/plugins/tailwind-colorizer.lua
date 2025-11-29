@@ -12,8 +12,8 @@ return {
 			color_square_width = 2,
 		})
 
-		require("cmp").config.formatting = {
-			format = colorizer.formatter
-		}
+		-- require("cmp").config.formatting = {
+		-- 	format = colorizer.formatter
+		-- }
 	end
 }
