@@ -1,5 +1,11 @@
 return {
 	"https://github.com/chentoast/marks.nvim",
+  tags = {
+    "ui",
+  },
+  description = [[
+    A better user experience for interacting with and manipulating Vim marks. 
+  ]],
   event = "VeryLazy",
 	config = function()
 		require 'marks'.setup {

@@ -1,5 +1,8 @@
 return {
 	"https://github.com/laytan/cloak.nvim",
+  description=[[
+    Cloak allows you to overlay *'s (or any other character) over defined patterns in defined files. It also disables 'cmp' for the buffer(if it is installed).
+  ]],
   event = "VeryLazy",
 	config = function()
 		require('cloak').setup({

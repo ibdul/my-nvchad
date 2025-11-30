@@ -5,6 +5,12 @@
 return {
 	-- Set lualine as statusline
 	'nvim-lualine/lualine.nvim',
+  tags = {
+    "ui"
+  },
+  description = [[
+    shows the status bar in the bottom
+  ]],
   event = "VeryLazy",
 	-- See `:help lualine.txt`
 	opts = {

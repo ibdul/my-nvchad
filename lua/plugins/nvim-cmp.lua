@@ -1,4 +1,10 @@
- return {
-   "hrsh7th/nvim-cmp",
-   enabled = false,
- }
+return {
+  "hrsh7th/nvim-cmp",
+  tags = {
+    "completion",
+  },
+  description = [[
+    nvim completion plugin
+  ]],
+  enabled = false,
+}

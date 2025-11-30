@@ -1,6 +1,14 @@
 return {
   'nvim-mini/mini.notify', 
   version = '*' ,
+  tags = {
+    "ui",
+    "notification",
+    "mini",
+  },
+  description = [[
+    mini nvim notification
+  ]],
   lazy=false,
   -- event = "VeryLazy",
   config = function ()

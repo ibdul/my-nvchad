@@ -1,5 +1,11 @@
 return {
   'saghen/blink.cmp',
+  tags = {
+    "completion",
+  },
+  description = [[
+    blink.cmp is a completion plugin with support for LSPs, cmdline, signature help, and snippets. It uses an optional custom fuzzy matcher for typo resistance.
+    ]],
   lazy = false,
   -- optional: provides snippets for the snippet source
   dependencies = { 'rafamadriz/friendly-snippets' },
@@ -28,8 +34,8 @@ return {
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = { 
       preset = 'default',
-      ['<tab>'] = { function(cmp) cmp.select_next() end },
-      ['<enter>'] = { function(cmp) cmp.accept_and_enter() end },
+      -- ['<tab>'] = { function(cmp) cmp.select_next() end },
+      -- ['<enter>'] = { function(cmp) cmp.accept_and_enter() end },
     },
   },
   opts_extend = { "sources.default" },

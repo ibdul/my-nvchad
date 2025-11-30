@@ -13,6 +13,14 @@ end
 
 return {
   'AckslD/nvim-neoclip.lua',
+  tags = {
+    "clipboard",
+  },
+  description = [[
+    clipboard manager for neovim inspired by for example clipmenu. It records everything that gets yanked in your vim session 
+    (up to a limit which is by default 1000 entries but can be configured). 
+    You can then select an entry in the history using telescope or fzf-lua which then gets populated in a register of your choice.
+  ]],
   event = "VeryLazy",
   dependencies = {
     -- you'll need at least one of these

@@ -1,5 +1,8 @@
 return {
 	"numToStr/Comment.nvim",
+  description = [[
+    ⚡ Smart and Powerful commenting plugin for neovim ⚡
+  ]],
 	dependencies = {
 		"JoosepAlviste/nvim-ts-context-commentstring",
 	},

@@ -1,6 +1,14 @@
 return { 
   'nvim-mini/mini.files',
   version = false,
+  tags = {
+    "ui",
+    "file browser",
+    "mini",
+  },
+  description = [[
+    mini nvim file browser
+  ]],
   lazy = false,
   config = function ()
     require ("mini.files").setup({

@@ -1,5 +1,11 @@
 return { 
   'justinhj/battery.nvim', 
+  tags = {
+    "ui",
+  }
+  description = [[
+    A cross platform Neovim plugin to provide battery information including percent charge remaining, number of batteries and whether the power cable is connected
+  ]],
   event="VeryLazy",
   dependencies = {
     'nvim-tree/nvim-web-devicons',

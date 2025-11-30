@@ -1,5 +1,24 @@
 return {
 	'nvimdev/lspsaga.nvim',
+  tags = {
+    'code',
+    'diagnostics',
+  },
+  description = [[
+    does many things including;
+    - Breadcrumbs
+    - Callhierarchy
+    - Code Action
+    - Definition
+    - Diagnostic
+    - Finder
+    - Float Terminal
+    - Hover
+    - Implement
+    - LightBulb
+    - Outline
+    - Rename
+  ]],
   event = "VeryLazy",
 	config = function()
 		require('lspsaga').setup({

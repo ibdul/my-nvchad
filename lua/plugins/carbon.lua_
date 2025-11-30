@@ -1,5 +1,12 @@
 return { 
   'SidOfc/carbon.nvim',
+  tags = {
+    "file browser",
+    "ui",
+    },
+  description= [[
+    Carbon.nvim provides a simple tree view of the directory Neovim was opened with/in.
+  ]],
   lazy = false,
   config = function ()
     require('carbon').setup()

@@ -1,5 +1,8 @@
 return {
-	"https://github.com/RRethy/vim-illuminate",
+	"RRethy/vim-illuminate",
+  description = [[
+    illuminate.vim - (Neo)Vim plugin for automatically highlighting other uses of the word under the cursor using either LSP, Tree-sitter, or regex matching.
+  ]],
   event = "VeryLazy",
 	config = function()
 		-- default configuration

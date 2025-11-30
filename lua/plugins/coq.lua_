@@ -1,6 +1,12 @@
 return {
   "neovim/nvim-lspconfig", -- REQUIRED: for native Neovim LSP integration
   lazy = false, -- REQUIRED: tell lazy.nvim to start this plugin at startup
+  tags = {
+    "completion",
+  },
+  description = [[
+    Fast as FUCK and loads of features.
+  ]],
   dependencies = {
     -- main one
     { "ms-jpq/coq_nvim", branch = "coq" },

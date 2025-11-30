@@ -1,5 +1,9 @@
 return {
   'doctorfree/cheatsheet.nvim',
+  description = [[
+    A searchable cheatsheet for neovim from within the editor using Telescope (fallback to displaying in a floating window if Telescope is not installed)
+    with command autofill, bundled cheats for the editor, vim plugins, nerd-fonts, etc because hoomans suck at remembering stuff:
+    ]],
   event = 'VeryLazy',
   dependencies = {
     { 'nvim-telescope/telescope.nvim' },

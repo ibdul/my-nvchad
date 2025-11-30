@@ -1,6 +1,11 @@
 return {
   'kevinhwang91/nvim-ufo',
   dependencies = 'kevinhwang91/promise-async',
+  tags = {
+    "ui",
+    "folds",
+  },
+  description = "allows better folds",
   event = 'VeryLazy',
   opts = {
     -- INFO: Uncomment to use treeitter as fold provider, otherwise nvim lsp is used

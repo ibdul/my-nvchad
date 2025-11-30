@@ -1,6 +1,9 @@
 return {
   'stevearc/aerial.nvim',
   event = "VeryLazy",
+  description = [[
+      A code outline window for skimming and quick navigation
+    ]],
   opts = {},
   -- Optional dependencies
   dependencies = {

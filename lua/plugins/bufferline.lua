@@ -1,6 +1,12 @@
 return {
 	"akinsho/bufferline.nvim",
   -- event = "VeryLazy",
+  description = [[
+    A snazzy bufferline for Neovim. 
+  ]],
+  tags = {
+    "ui",
+  },
   lazy=false,
 	dependencies = {
 		"moll/vim-bbye"

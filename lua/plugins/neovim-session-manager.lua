@@ -1,5 +1,8 @@
 return {
 	"https://github.com/Shatur/neovim-session-manager",
+  description = [[
+    A Neovim plugin that use built-in :mksession to manage sessions like folders in VSCode. It allows you to save the current folder as a session to open it later.
+  ]],
   event = "VeryLazy",
 	config = function()
 		local Path = require('plenary.path')

@@ -1,5 +1,12 @@
 return {
   "vigoux/notifier.nvim",
+  tags = {
+    "notify",
+    "ui",
+  }
+  description = [[
+    This plugin provides some commands: :NotifierClear " Clear the vim.notify items :NotifierReplay " Replay all vim.notify items :NotifierReplay!
+  ]],
   lazy = false,
   -- event ="VeryLazy",
   config = function()

@@ -1,5 +1,8 @@
 return {
   'folke/flash.nvim',
+  description = [[
+    lets you navigate your code with search labels, enhanced character motions, and Treesitter integration.
+  ]],
   event = 'VeryLazy',
   ---@type Flash.Config
   opts = {

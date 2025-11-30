@@ -1,9 +1,13 @@
 return {
   'sbdchd/neoformat',
-  event = "VeryLazy",
+  tags = {
+    "ui",
+    "formatter",
+  }
   description = [[
      A (Neo)vim plugin for formatting code.
   ]],
+  event = "VeryLazy",
   -- config = function ()
   --   require("neoformat").setup()
   -- end,

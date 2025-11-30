@@ -1,5 +1,13 @@
 return {
   'ray-x/lsp_signature.nvim',
+  tags = {
+    "ui",
+    "hint",
+    "lsp",
+  },
+  description = [[
+    Show function signature when you type
+  ]],
   event = 'InsertEnter',
   opts = {
     bind = true,

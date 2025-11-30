@@ -1,6 +1,11 @@
 return {
   'nvim-mini/mini.map',
   version = '*',
+  tags = {
+    "ui",
+    "mini",
+  },
+  description = "shows the small top right code map",
   event = "VeryLazy",
   config = function ()
     require('mini.map').setup({
