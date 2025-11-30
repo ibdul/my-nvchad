@@ -28,16 +28,9 @@ return {
     -- See :h blink-cmp-config-keymap for defining your own keymap
     keymap = { 
       preset = 'default',
-      -- ['<tab>'] = { function(cmp) cmp.select_next() end },
-      -- ['<enter>'] = { function(cmp) cmp.accept_and_enter() end },
+      ['<tab>'] = { function(cmp) cmp.select_next() end },
+      ['<enter>'] = { function(cmp) cmp.accept_and_enter() end },
     },
   },
   opts_extend = { "sources.default" },
-  config = function ()
-    require("blink.cmp").setup({
-    keymap = {
-      preset = 'default'
-      },
-    })
-  end,
 }
