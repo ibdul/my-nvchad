@@ -1,6 +1,9 @@
 return {
   '0xJohnnyboy/scretch.nvim',
   event="VeryLazy",
+  tags = {
+    "scratch file",
+  },
   description = [[
     Scretch.nvim is a plugin to easily create and manage scratch files 🙂.
   ]],

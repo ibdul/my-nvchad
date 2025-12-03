@@ -1,5 +1,10 @@
 return {
   'nvim-telescope/telescope-live-grep-args.nvim',
+  tags = {
+    "ui",
+    "telescope",
+  },
+  description = "Live grep args picker for telescope.nvim.",
   event = "VeryLazy",
   dependencies = {
     'nvim-telescope/telescope.nvim',

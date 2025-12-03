@@ -1,6 +1,9 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local servers = { "html", "cssls", "ts_ls", "py_ls", "pyright", "php" }
+
+-- lua require'nvim_lsp'.ocamllsp.setup{on_attach=require'virtualtypes'.on_attach}
+
 vim.lsp.enable(servers)
 
 -- read :h vim.lsp.config for changing options of lsp servers 

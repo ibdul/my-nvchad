@@ -1,5 +1,9 @@
 return {
 	"jiaoshijie/undotree",
+  tags = {
+    "undo",
+  },
+  description = "A neovim undotree plugin written in lua.",
   event = "VeryLazy",
 	dependencies = "nvim-lua/plenary.nvim",
 	config = function()

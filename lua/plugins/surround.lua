@@ -1,6 +1,17 @@
 return {
   'nvim-mini/mini.surround',
   version = '*',
+  tags = {
+    "mini",
+  },
+  description = [[
+    Fast and feature-rich surround actions
+
+    * Add, delete, replace, find, highlight surrounding (like pair of parenthesis, quotes, etc.).
+    * Supports dot-repeat for text edits, v:count, different search methods, "last"/"next" extended mappings, customization via Lua patterns or functions, and more.
+    * Has builtins for brackets, function call, tag, user prompt, and any alphanumeric/punctuation/whitespace character.
+    * Has maintained configuration of setup similar to 'tpope/vim-surround'.
+  ]],
   lazy=false,
   -- Add/delete/replace surroundings (brackets, quotes, etc.)
   --

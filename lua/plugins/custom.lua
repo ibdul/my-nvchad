@@ -10,6 +10,7 @@ return {
     description =[[
       Live grep args picker for telescope.nvim. What it does It enables passing arguments to the grep command, rg examples: foo → press <Ck> → "foo" → "foo" -tmd
     ]],
+    event="VeryLazy",
     dependencies = {
       'nvim-telescope/telescope.nvim',
     },

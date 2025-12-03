@@ -1,28 +1,34 @@
 return {
   'nvim-telescope/telescope-file-browser.nvim',
-  event = "VeryLazy",
-  dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' },
-  config = function()
-    local fb_actions = require('telescope').extensions.file_browser.actions
+    event = "VeryLazy",
+    tags = {
+      "ui",
+      "file browser",
+      "telescope"
+    },
+    description = "telescope-file-browser.nvim is a file browser extension for telescope.nvim. It supports synchronized creation, deletion, renaming, and moving of file",
+    dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' },
+    config = function()
+      local fb_actions = require('telescope').extensions.file_browser.actions
 
-    require('telescope').setup {
-      show_current_path = true,
-      extensions = {
-        file_browser = {
-          show_current_path = true,
-          theme = 'ivy',
-          hijack_netrw = true,
-          hide_parent_dir = false,
-          mappings = {
-            ['n'] = {
-              ['h'] = fb_actions.goto_parent_dir,
-              ['l'] = fb_actions.open_dir,
-              ['.'] = fb_actions.toggle_hidden,
+      require('telescope').setup {
+        show_current_path = true,
+        extensions = {
+          file_browser = {
+            show_current_path = true,
+            theme = 'ivy',
+            hijack_netrw = true,
+            hide_parent_dir = false,
+            mappings = {
+              ['n'] = {
+                ['h'] = fb_actions.goto_parent_dir,
+                ['l'] = fb_actions.open_dir,
+                ['.'] = fb_actions.toggle_hidden,
+              },
             },
           },
         },
-      },
-    }
-    require('telescope').load_extension 'file_browser'
-  end,
+      }
+  require('telescope').load_extension 'file_browser'
+    end,
 }

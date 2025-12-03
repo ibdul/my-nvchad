@@ -1,6 +1,10 @@
 return {
 	"chrisgrieser/nvim-recorder",
   event = "VeryLazy",
+  tags = {
+    "macros",
+  },
+  description = "Enhance the usage of macros in Neovim.",
 	dependencies = {
 		"rcarriga/nvim-notify", -- optionalS
 		opts = {},            -- required even with default settings, since it calls `setup()`

@@ -2,6 +2,11 @@
 ---
 return {
   'mikavilpas/yazi.nvim',
+  tags = {
+    "ui",
+    "file browser",
+  },
+  description = "yazi file browser",
   version = '*', -- use the latest stable version
   event = 'VeryLazy',
   dependencies = {

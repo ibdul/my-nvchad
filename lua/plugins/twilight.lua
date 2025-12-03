@@ -1,5 +1,9 @@
 local m = {
 	"folke/twilight.nvim",
+  tags = {
+    "ui",
+  },
+  description = " Twilight is a Lua plugin for Neovim 0.5 that dims inactive portions of the code you're editing. ",
   event = "VeryLazy",
 	opts = {
 		dimming = {

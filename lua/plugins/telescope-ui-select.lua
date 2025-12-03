@@ -1,5 +1,10 @@
 return {
 	'nvim-telescope/telescope-ui-select.nvim',
+  tags = {
+    "ui",
+    "telescope",
+  },
+  description = " It sets vim.ui.select to telescope. That means for example that neovim core stuff can fill the telescope picker. Example would be lua vim.lsp.buf.code_action(). ",
   event = "VeryLazy",
 	config = function()
 		require("telescope").setup {

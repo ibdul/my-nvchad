@@ -1,5 +1,10 @@
 return {
   'ibdul/triptych.nvim', -- main repo = 'simonmclean/triptych.nvim',
+  tags = {
+    "ui",
+    "file browser",
+  },
+  description = "Directory browser for Neovim, inspired by Ranger",
   dependencies = {
     'nvim-lua/plenary.nvim', -- required
     'nvim-tree/nvim-web-devicons', -- optional for icons

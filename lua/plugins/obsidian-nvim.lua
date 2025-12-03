@@ -1,7 +1,20 @@
 return {
   'epwalsh/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit
-  lazy = true,
+  -- lazy = true,
+  tags = {
+    "notes",
+    "vault",
+    "obsidian",
+    "markdown",
+    "md",
+  },
+  description = [[
+    A Neovim plugin for writing and navigating Obsidian vaults, written in Lua.
+    Built for people who love the concept of Obsidian -- a simple, markdown-based notes app --
+    but love Neovim too much to stand typing characters into anything else.
+  ]],
+  event = "VeryLazy",
   ft = 'markdown',
   -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
   -- event = {

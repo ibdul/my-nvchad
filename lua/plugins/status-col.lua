@@ -1,6 +1,11 @@
 return {
 	"luukvbaal/statuscol.nvim",
   -- lazy=false,
+  tags = {
+    "ui",
+    "status column",
+  },
+  description = "Status column plugin that provides a configurable 'statuscolumn' and click handlers.",
   event = "VeryLazy",
 	config = function()
 		local builtin = require("statuscol.builtin")

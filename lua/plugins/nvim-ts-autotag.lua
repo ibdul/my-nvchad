@@ -1,6 +1,7 @@
 return {
   'windwp/nvim-ts-autotag',
   event = "VeryLazy",
+  description = "Use treesitter to autoclose and autorename tags",
   config = function()
     require('nvim-ts-autotag').setup {
       opts = {

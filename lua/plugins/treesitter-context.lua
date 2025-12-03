@@ -1,5 +1,13 @@
 return {
   'nvim-treesitter/nvim-treesitter-context',
+  tags = {
+    "treesitter",
+    "lsp",
+  },
+  description = [[
+    Lightweight alternative to context.vim
+    Note: This plugin requires necessary language parsers in order to work. Non default language parsers can be installed with nvim-treesitter.
+  ]],
   event = "VeryLazy",
   config = function()
     require('treesitter-context').setup {

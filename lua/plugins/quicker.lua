@@ -1,5 +1,8 @@
 return {
   'stevearc/quicker.nvim',
+  tags = {
+    "quickfix",
+  },
   description = [[
     Improved UI and workflow for the Neovim quickfix
   ]],
