@@ -5,7 +5,7 @@ local term_opts = { silent = true }
 local keymap = vim.keymap.set
 
 --remap space as leader key
-keymap('', '<Space>', '<Nop>', opts)
+keymap("", "<Space>", "<Nop>", opts)
 -- vim.g.mapleader = ' '
 -- vim.g.maplocalleader = ' '
 
@@ -17,72 +17,72 @@ keymap('', '<Space>', '<Nop>', opts)
 -- terminal = t
 -- command = c
 
-keymap("n",'<leader>rn', vim.lsp.buf.rename, opts)
+keymap("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
 --NORMAL MODE--
 -- improved window navigation
-keymap('n', '<C-h>', '<C-w>h', opts)
-keymap('n', '<C-j>', '<C-w>j', opts)
-keymap('n', '<C-k>', '<C-w>k', opts)
-keymap('n', '<C-l>', '<C-w>l', opts)
+keymap("n", "<C-h>", "<C-w>h", opts)
+keymap("n", "<C-j>", "<C-w>j", opts)
+keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- file browser
 -- keymap('n', '<leader>d', ':Telescope file_browser path=%:p:h select_buffer=true<CR>', opts)
 
 --buffer delete
-keymap('n', '<leader>x', ':bd<CR>', opts)
+keymap("n", "<leader>x", ":bd<CR>", opts)
 
 -- Copy whole file content to clipboard with C-c
-keymap('n', '<C-c>', ':%y<CR>', opts)
-keymap('n', '<leader><C-c>', ':%y+<CR>', opts)
+keymap("n", "<C-c>", ":%y<CR>", opts)
+keymap("n", "<leader><C-c>", ":%y+<CR>", opts)
 
 -- yank and paste to sys clipboard
-keymap('n', '<leader>y', '"+y', opts)
-keymap('v', '<leader>y', '"+y', opts)
-keymap('x', '<leader>y', '"+y', opts)
-keymap('t', '<leader>y', '"+y', opts)
+keymap("n", "<leader>y", '"+y', opts)
+keymap("v", "<leader>y", '"+y', opts)
+keymap("x", "<leader>y", '"+y', opts)
+keymap("t", "<leader>y", '"+y', opts)
 
-keymap('n', '<leader>yip', '"+yip', opts)
-keymap('n', '<leader>yiW', '"+yiW', opts)
-keymap('n', '<leader>yiw', '"+yiw', opts)
-keymap('n', '<leader>yit', '"+yit', opts)
-keymap('n', '<leader>yi(', '"+yi(', opts)
-keymap('n', '<leader>yi)', '"+yi)', opts)
-keymap('n', '<leader>yi{', '"+yi{', opts)
-keymap('n', '<leader>yi}', '"+yi}', opts)
-keymap('n', '<leader>yi<', '"+yi<', opts)
-keymap('n', '<leader>yi>', '"+yi>', opts)
-keymap('n', '<leader>yi`', '"+yi`', opts)
-keymap('n', '<leader>yi"', '"+yi"', opts)
-keymap('n', "<leader>yi'", [["+yi']], opts)
+keymap("n", "<leader>yip", '"+yip', opts)
+keymap("n", "<leader>yiW", '"+yiW', opts)
+keymap("n", "<leader>yiw", '"+yiw', opts)
+keymap("n", "<leader>yit", '"+yit', opts)
+keymap("n", "<leader>yi(", '"+yi(', opts)
+keymap("n", "<leader>yi)", '"+yi)', opts)
+keymap("n", "<leader>yi{", '"+yi{', opts)
+keymap("n", "<leader>yi}", '"+yi}', opts)
+keymap("n", "<leader>yi<", '"+yi<', opts)
+keymap("n", "<leader>yi>", '"+yi>', opts)
+keymap("n", "<leader>yi`", '"+yi`', opts)
+keymap("n", '<leader>yi"', '"+yi"', opts)
+keymap("n", "<leader>yi'", [["+yi']], opts)
 
-keymap('n', '<leader>yap', '"+yap', opts)
-keymap('n', '<leader>yaW', '"+yaW', opts)
-keymap('n', '<leader>yaw', '"+yaw', opts)
-keymap('n', '<leader>yat', '"+yat', opts)
-keymap('n', '<leader>ya(', '"+ya(', opts)
-keymap('n', '<leader>ya)', '"+ya)', opts)
-keymap('n', '<leader>ya{', '"+ya{', opts)
-keymap('n', '<leader>ya}', '"+ya}', opts)
-keymap('n', '<leader>ya<', '"+ya<', opts)
-keymap('n', '<leader>ya>', '"+ya>', opts)
-keymap('n', '<leader>ya`', '"+ya`', opts)
-keymap('n', "<leader>ya'", [["+ya']], opts)
+keymap("n", "<leader>yap", '"+yap', opts)
+keymap("n", "<leader>yaW", '"+yaW', opts)
+keymap("n", "<leader>yaw", '"+yaw', opts)
+keymap("n", "<leader>yat", '"+yat', opts)
+keymap("n", "<leader>ya(", '"+ya(', opts)
+keymap("n", "<leader>ya)", '"+ya)', opts)
+keymap("n", "<leader>ya{", '"+ya{', opts)
+keymap("n", "<leader>ya}", '"+ya}', opts)
+keymap("n", "<leader>ya<", '"+ya<', opts)
+keymap("n", "<leader>ya>", '"+ya>', opts)
+keymap("n", "<leader>ya`", '"+ya`', opts)
+keymap("n", "<leader>ya'", [["+ya']], opts)
 
-keymap('n', '<leader>p', '"+p', opts)
-keymap('v', '<leader>p', '"+p', opts)
-keymap('x', '<leader>p', '"+p', opts)
-keymap('t', '<leader>p', '"+p', opts)
+keymap("n", "<leader>p", '"+p', opts)
+keymap("v", "<leader>p", '"+p', opts)
+keymap("x", "<leader>p", '"+p', opts)
+keymap("t", "<leader>p", '"+p', opts)
 
 --resize with arrows
-keymap('n', '<C-Up>', ':resize +2<CR>', opts)
-keymap('n', '<C-Down>', ':resize -2<CR>', opts)
-keymap('n', '<C-Left>', ':vertical resize -2<CR>', opts)
-keymap('n', '<C-Right>', ':vertical resize +2<CR>', opts)
+keymap("n", "<C-Up>", ":resize +2<CR>", opts)
+keymap("n", "<C-Down>", ":resize -2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 --Navigate buffers
-keymap('n', '<S-l>', ':bnext<CR>', opts)
-keymap('n', '<S-h>', ':bprevious<CR>', opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 --INSERT--
 -- reset js to escape
@@ -90,75 +90,83 @@ keymap('n', '<S-h>', ':bprevious<CR>', opts)
 
 --VISUAL--
 --stay in indent mode
-keymap('v', '<', '<gv', opts)
-keymap('v', '>', '>gv', opts)
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
 
 -- Better paste
 -- remap "p" in visual mode to delete the highlighted text without overwriting your yanked/copied text, and then paste the content from the unnamed register.
-keymap('v', 'p', '"_dp', opts)
+keymap("v", "p", '"_dp', opts)
 
 -- move text up and down
-keymap('v', '<A-j>', ':m .+1<CR>==', opts)
-keymap('v', '<A-k>', ':m .-2<CR>==', opts)
+keymap("v", "<A-j>", ":m .+1<CR>==", opts)
+keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 
 --VISUAL BLOCK--
 --move text up and down
-keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts)
-keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
+keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
+keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 --TERMINAL--
 --improved terminal navigation
-keymap('t', '<C-h>', '<C-\\><C-N><C-w>h', term_opts)
-keymap('t', '<C-j>', '<C-\\><C-N><C-w>j', term_opts)
-keymap('t', '<C-k>', '<C-\\><C-N><C-w>k', term_opts)
-keymap('t', '<C-l>', '<C-\\><C-N><C-w>l', term_opts)
+keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 --COMMAND--
 --imporoved navigation
-keymap('c', '<C-k>', '<Up>', { noremap = true })
-keymap('c', '<C-j>', '<Down>', { noremap = true })
-keymap('c', '<C-h>', '<Left>', { noremap = true })
-keymap('c', '<C-l>', '<Right>', { noremap = true })
+keymap("c", "<C-k>", "<Up>", { noremap = true })
+keymap("c", "<C-j>", "<Down>", { noremap = true })
+keymap("c", "<C-h>", "<Left>", { noremap = true })
+keymap("c", "<C-l>", "<Right>", { noremap = true })
 
 --yanking and pasting
-keymap('c', '<C-p>', '<C-R>', { noremap = true })
-keymap('c', '<C-y>', function()
-  vim.fn.setreg('', vim.fn.getcmdline())
+keymap("c", "<C-p>", "<C-R>", { noremap = true })
+keymap("c", "<C-y>", function()
+  vim.fn.setreg("", vim.fn.getcmdline())
 end, { noremap = true })
 
 --PLUGINS--
 
 --telescope
-keymap('n', '<leader>f', "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap('n', '<c-t>', '<cmd>Telescope live_grep_args<cr>', opts)
-keymap('n', '<c-t>t', '<cmd>Telescope live_grep_args<cr>', opts)
-keymap('n', '<C-t>o', '<cmd>ObsidianSearch<cr>', opts)
-keymap('n', '<c-t>p', '<cmd>Telescope neoclip<cr>', opts)
+keymap(
+  "n",
+  "<leader>f",
+  "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+  opts
+)
+keymap("n", "<c-t>", "<cmd>Telescope live_grep_args<cr>", opts)
+keymap("n", "<leader><leader>", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<c-t>t", "<cmd>Telescope live_grep_args<cr>", opts)
+keymap("n", "<C-t>o", "<cmd>ObsidianSearch<cr>", opts)
+keymap("n", "<c-t>p", "<cmd>Telescope neoclip<cr>", opts)
 
-keymap('n', '<A-i>', ":exe v:count1 . 'ToggleTerm' <CR> ", opts)
+keymap("n", "<A-i>", ":exe v:count1 . 'ToggleTerm' <CR> ", opts)
 
 -- Diagnostic keymaps
-vim.keymap.set('n', 'g,', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
-vim.keymap.set('n', 'g;', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+vim.keymap.set("n", "g,", vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic message" })
+vim.keymap.set("n", "g;", vim.diagnostic.goto_next, { desc = "Go to next diagnostic message" })
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
-vim.keymap.set("n",'<leader>ca', vim.lsp.buf.code_action, {desc='[C]ode [A]ction'})
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
 
 -- completion
 local imap_expr = function(lhs, rhs)
-  vim.keymap.set('i', lhs, rhs, { expr = true })
+  vim.keymap.set("i", lhs, rhs, { expr = true })
 end
-imap_expr('<Tab>',   [[pumvisible() ? "\<C-n>" : "\<Tab>"]])
-imap_expr('<S-Tab>', [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]])
+imap_expr("<Tab>", [[pumvisible() ? "\<C-n>" : "\<Tab>"]])
+imap_expr("<S-Tab>", [[pumvisible() ? "\<C-p>" : "\<S-Tab>"]])
 
 _G.cr_action = function()
   -- If there is selected item in popup, accept it with <C-y>
-  if vim.fn.complete_info()['selected'] ~= -1 then return '\25' end
+  if vim.fn.complete_info()["selected"] ~= -1 then
+    return "\25"
+  end
   -- Fall back to plain `<CR>`. You might want to customize according
   -- to other plugins. For example if 'mini.pairs' is set up, replace
   -- next line with `return MiniPairs.cr()`
-  return '\r'
+  return "\r"
 end
 
-vim.keymap.set('i', '<CR>', 'v:lua.cr_action()', { expr = true })
+vim.keymap.set("i", "<CR>", "v:lua.cr_action()", { expr = true })
