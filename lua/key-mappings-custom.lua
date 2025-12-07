@@ -137,6 +137,7 @@ keymap(
 )
 keymap("n", "<c-t>", "<cmd>Telescope live_grep_args<cr>", opts)
 keymap("n", "<leader><leader>", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<leader><leader>l", "<cmd>BufferLinePick<cr>", opts)
 keymap("n", "<c-t>t", "<cmd>Telescope live_grep_args<cr>", opts)
 keymap("n", "<C-t>o", "<cmd>ObsidianSearch<cr>", opts)
 keymap("n", "<c-t>p", "<cmd>Telescope neoclip<cr>", opts)
