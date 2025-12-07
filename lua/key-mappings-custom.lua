@@ -101,7 +101,7 @@ keymap('v', 'p', '"_dp', opts)
 keymap('v', '<A-j>', ':m .+1<CR>==', opts)
 keymap('v', '<A-k>', ':m .-2<CR>==', opts)
 
---VISUAL BLOCK--
+--VISUAL BLOC--
 --move text up and down
 keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts)
 keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
@@ -134,6 +134,8 @@ keymap('n', '<c-t>', '<cmd>Telescope live_grep_args<cr>', opts)
 keymap('n', '<c-t>t', '<cmd>Telescope live_grep_args<cr>', opts)
 keymap('n', '<C-t>o', '<cmd>ObsidianSearch<cr>', opts)
 keymap('n', '<c-t>p', '<cmd>Telescope neoclip<cr>', opts)
+vim.keymap.set('n', '<c-t>d', "<cmd>Telescope lsp_references<cr>", { desc = 'Open references list' })
+-- vim.keymap.set('n', '<c-t>k', "<cmd>Telescope lsp_definitions<cr>", { desc = 'Show definitions' })
 
 keymap('n', '<A-i>', ":exe v:count1 . 'ToggleTerm' <CR> ", opts)
 
@@ -142,6 +144,7 @@ vim.keymap.set('n', 'g,', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', 'g;', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
 
 vim.keymap.set("n",'<leader>ca', vim.lsp.buf.code_action, {desc='[C]ode [A]ction'})
 
