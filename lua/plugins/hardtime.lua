@@ -6,7 +6,7 @@ return {
     Get report of your most common bad habits
         :Hardtime report
   ]],
-  lazy = "VeryLazy",
+  event = "VeryLazy",
   dependencies = { "MunifTanjim/nui.nvim" },
   opts = {},
   config = function()
