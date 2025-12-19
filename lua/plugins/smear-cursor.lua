@@ -4,8 +4,9 @@ return {
     "ui",
     "animation",
   },
-  descrption = "Neovim plugin to animate the cursor with a smear effect in all terminals. Inspired by Neovide's animated cursor.",
-  enabled=false,
+  descrption =
+  "Neovim plugin to animate the cursor with a smear effect in all terminals. Inspired by Neovide's animated cursor.",
+  -- enabled=false,
   opts = {},
   event = "VeryLazy",
 }
